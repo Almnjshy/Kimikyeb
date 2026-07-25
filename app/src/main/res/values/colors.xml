@@ -7,7 +7,7 @@
     <color name="mkpro_key_background_pressed">#FF4A4A50</color>
     <color name="mkpro_key_text">#FFE0E0E5</color>
     <color name="mkpro_key_text_pressed">#FFFFFFFF</color>
-    <color name="mkpro_key_accent">#FF6C63FF</color>
+    <color name="mkpro_accent">#FF6C63FF</color>
     <color name="mkpro_modifier_background">#FF2A2A30</color>
     <color name="mkpro_modifier_pressed">#FF3A3A42</color>
     <color name="mkpro_enter_background">#FF6C63FF</color>
@@ -18,4 +18,5 @@
     <color name="mkpro_primary">#FF6C63FF</color>
     <color name="mkpro_on_primary">#FFFFFFFF</color>
     <color name="mkpro_secondary">#FF03DAC6</color>
+    <color name="mkpro_border">#FF4A4A50</color>
 </resources>
