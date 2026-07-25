@@ -31,7 +31,7 @@ data class KeyDefinition(
         val I = KeyDefinition("i", "i", KeyType.CHARACTER, 'i', weight = 1.0f, shiftLabel = "I", shiftCharacter = 'I')
         val O = KeyDefinition("o", "o", KeyType.CHARACTER, 'o', weight = 1.0f, shiftLabel = "O", shiftCharacter = 'O')
         val P = KeyDefinition("p", "p", KeyType.CHARACTER, 'p', weight = 1.0f, shiftLabel = "P", shiftCharacter = 'P')
-
+        
         // Row 2: ASDF
         val A = KeyDefinition("a", "a", KeyType.CHARACTER, 'a', weight = 1.0f, shiftLabel = "A", shiftCharacter = 'A')
         val S = KeyDefinition("s", "s", KeyType.CHARACTER, 's', weight = 1.0f, shiftLabel = "S", shiftCharacter = 'S')
@@ -42,7 +42,7 @@ data class KeyDefinition(
         val J = KeyDefinition("j", "j", KeyType.CHARACTER, 'j', weight = 1.0f, shiftLabel = "J", shiftCharacter = 'J')
         val K = KeyDefinition("k", "k", KeyType.CHARACTER, 'k', weight = 1.0f, shiftLabel = "K", shiftCharacter = 'K')
         val L = KeyDefinition("l", "l", KeyType.CHARACTER, 'l', weight = 1.0f, shiftLabel = "L", shiftCharacter = 'L')
-
+        
         // Row 3: ZXCV
         val Z = KeyDefinition("z", "z", KeyType.CHARACTER, 'z', weight = 1.0f, shiftLabel = "Z", shiftCharacter = 'Z')
         val X = KeyDefinition("x", "x", KeyType.CHARACTER, 'x', weight = 1.0f, shiftLabel = "X", shiftCharacter = 'X')
@@ -51,7 +51,7 @@ data class KeyDefinition(
         val B = KeyDefinition("b", "b", KeyType.CHARACTER, 'b', weight = 1.0f, shiftLabel = "B", shiftCharacter = 'B')
         val N = KeyDefinition("n", "n", KeyType.CHARACTER, 'n', weight = 1.0f, shiftLabel = "N", shiftCharacter = 'N')
         val M = KeyDefinition("m", "m", KeyType.CHARACTER, 'm', weight = 1.0f, shiftLabel = "M", shiftCharacter = 'M')
-
+        
         // Numbers
         val NUM1 = KeyDefinition("1", "1", KeyType.CHARACTER, '1', weight = 1.0f, shiftLabel = "!", shiftCharacter = '!')
         val NUM2 = KeyDefinition("2", "2", KeyType.CHARACTER, '2', weight = 1.0f, shiftLabel = "@", shiftCharacter = '@')
@@ -63,7 +63,7 @@ data class KeyDefinition(
         val NUM8 = KeyDefinition("8", "8", KeyType.CHARACTER, '8', weight = 1.0f, shiftLabel = "*", shiftCharacter = '*')
         val NUM9 = KeyDefinition("9", "9", KeyType.CHARACTER, '9', weight = 1.0f, shiftLabel = "(", shiftCharacter = '(')
         val NUM0 = KeyDefinition("0", "0", KeyType.CHARACTER, '0', weight = 1.0f, shiftLabel = ")", shiftCharacter = ')')
-
+        
         // Special Characters
         val MINUS = KeyDefinition("-", "-", KeyType.CHARACTER, '-', weight = 1.0f, shiftLabel = "_", shiftCharacter = '_')
         val EQUALS = KeyDefinition("=", "=", KeyType.CHARACTER, '=', weight = 1.0f, shiftLabel = "+", shiftCharacter = '+')
@@ -71,32 +71,32 @@ data class KeyDefinition(
         val RBRACKET = KeyDefinition("]", "]", KeyType.CHARACTER, ']', weight = 1.0f, shiftLabel = "}", shiftCharacter = '}')
         val BACKSLASH = KeyDefinition("\\", "\\", KeyType.CHARACTER, '\\', weight = 1.5f, shiftLabel = "|", shiftCharacter = '|')
         val SEMICOLON = KeyDefinition(";", ";", KeyType.CHARACTER, ';', weight = 1.0f, shiftLabel = ":", shiftCharacter = ':')
-        val APOSTROPHE = KeyDefinition("'", "'", KeyType.CHARACTER = ''', weight = 1.0f, shiftLabel = """, shiftCharacter = '"')
+        val APOSTROPHE = KeyDefinition("\'", "\'", KeyType.CHARACTER, '\'', weight = 1.0f, shiftLabel = "\\"", shiftCharacter = '"')
         val COMMA = KeyDefinition(",", ",", KeyType.CHARACTER, ',', weight = 1.0f, shiftLabel = "<", shiftCharacter = '<')
         val PERIOD = KeyDefinition(".", ".", KeyType.CHARACTER, '.', weight = 1.0f, shiftLabel = ">", shiftCharacter = '>')
         val SLASH = KeyDefinition("/", "/", KeyType.CHARACTER, '/', weight = 1.0f, shiftLabel = "?", shiftCharacter = '?')
         val GRAVE = KeyDefinition("`", "`", KeyType.CHARACTER, '`', weight = 1.0f, shiftLabel = "~", shiftCharacter = '~')
-
+        
         // Modifier Keys
-        val SHIFT = KeyDefinition("shift", "⇧", KeyType.MODIFIER, keyCode = android.view.KeyEvent.KEYCODE_SHIFT_LEFT, weight = 1.5f)
-        val SHIFT_RIGHT = KeyDefinition("shift_right", "⇧", KeyType.MODIFIER, keyCode = android.view.KeyEvent.KEYCODE_SHIFT_RIGHT, weight = 1.5f)
+        val SHIFT = KeyDefinition("shift", "\u21E7", KeyType.MODIFIER, keyCode = android.view.KeyEvent.KEYCODE_SHIFT_LEFT, weight = 1.5f)
+        val SHIFT_RIGHT = KeyDefinition("shift_right", "\u21E7", KeyType.MODIFIER, keyCode = android.view.KeyEvent.KEYCODE_SHIFT_RIGHT, weight = 1.5f)
         val CTRL = KeyDefinition("ctrl", "Ctrl", KeyType.MODIFIER, keyCode = android.view.KeyEvent.KEYCODE_CTRL_LEFT, weight = 1.2f)
         val ALT = KeyDefinition("alt", "Alt", KeyType.MODIFIER, keyCode = android.view.KeyEvent.KEYCODE_ALT_LEFT, weight = 1.2f)
         val FN = KeyDefinition("fn", "Fn", KeyType.MODIFIER, weight = 1.0f)
-
+        
         // Action Keys
-        val BACKSPACE = KeyDefinition("backspace", "⌫", KeyType.ACTION, keyCode = android.view.KeyEvent.KEYCODE_DEL, weight = 1.5f, isRepeatable = true)
-        val ENTER = KeyDefinition("enter", "↵", KeyType.ACTION, keyCode = android.view.KeyEvent.KEYCODE_ENTER, weight = 1.5f)
+        val BACKSPACE = KeyDefinition("backspace", "\u232B", KeyType.ACTION, keyCode = android.view.KeyEvent.KEYCODE_DEL, weight = 1.5f, isRepeatable = true)
+        val ENTER = KeyDefinition("enter", "\u21B5", KeyType.ACTION, keyCode = android.view.KeyEvent.KEYCODE_ENTER, weight = 1.5f)
         val TAB = KeyDefinition("tab", "Tab", KeyType.ACTION, keyCode = android.view.KeyEvent.KEYCODE_TAB, weight = 1.2f)
         val SPACE = KeyDefinition("space", "", KeyType.ACTION, keyCode = android.view.KeyEvent.KEYCODE_SPACE, weight = 4.0f)
         val ESC = KeyDefinition("esc", "Esc", KeyType.ACTION, keyCode = android.view.KeyEvent.KEYCODE_ESCAPE, weight = 1.0f)
-
+        
         // Navigation
-        val ARROW_UP = KeyDefinition("arrow_up", "↑", KeyType.NAVIGATION, keyCode = android.view.KeyEvent.KEYCODE_DPAD_UP, weight = 1.0f)
-        val ARROW_DOWN = KeyDefinition("arrow_down", "↓", KeyType.NAVIGATION, keyCode = android.view.KeyEvent.KEYCODE_DPAD_DOWN, weight = 1.0f)
-        val ARROW_LEFT = KeyDefinition("arrow_left", "←", KeyType.NAVIGATION, keyCode = android.view.KeyEvent.KEYCODE_DPAD_LEFT, weight = 1.0f)
-        val ARROW_RIGHT = KeyDefinition("arrow_right", "→", KeyType.NAVIGATION, keyCode = android.view.KeyEvent.KEYCODE_DPAD_RIGHT, weight = 1.0f)
-
+        val ARROW_UP = KeyDefinition("arrow_up", "\u2191", KeyType.NAVIGATION, keyCode = android.view.KeyEvent.KEYCODE_DPAD_UP, weight = 1.0f)
+        val ARROW_DOWN = KeyDefinition("arrow_down", "\u2193", KeyType.NAVIGATION, keyCode = android.view.KeyEvent.KEYCODE_DPAD_DOWN, weight = 1.0f)
+        val ARROW_LEFT = KeyDefinition("arrow_left", "\u2190", KeyType.NAVIGATION, keyCode = android.view.KeyEvent.KEYCODE_DPAD_LEFT, weight = 1.0f)
+        val ARROW_RIGHT = KeyDefinition("arrow_right", "\u2192", KeyType.NAVIGATION, keyCode = android.view.KeyEvent.KEYCODE_DPAD_RIGHT, weight = 1.0f)
+        
         // Function Keys
         val F1 = KeyDefinition("f1", "F1", KeyType.FUNCTION, keyCode = android.view.KeyEvent.KEYCODE_F1, weight = 1.0f)
         val F2 = KeyDefinition("f2", "F2", KeyType.FUNCTION, keyCode = android.view.KeyEvent.KEYCODE_F2, weight = 1.0f)
@@ -110,27 +110,27 @@ data class KeyDefinition(
         val F10 = KeyDefinition("f10", "F10", KeyType.FUNCTION, keyCode = android.view.KeyEvent.KEYCODE_F10, weight = 1.0f)
         val F11 = KeyDefinition("f11", "F11", KeyType.FUNCTION, keyCode = android.view.KeyEvent.KEYCODE_F11, weight = 1.0f)
         val F12 = KeyDefinition("f12", "F12", KeyType.FUNCTION, keyCode = android.view.KeyEvent.KEYCODE_F12, weight = 1.0f)
-
+        
         // Special
-        val SYMBOLS = KeyDefinition("symbols", "?123", KeyType.SPECIAL, weight = 1.2f)
+        val SYMBOLS = KeyDefinition("symbols", "123#", KeyType.SPECIAL, weight = 1.2f)
         val LETTERS = KeyDefinition("letters", "ABC", KeyType.SPECIAL, weight = 1.2f)
-        val EMOJI = KeyDefinition("emoji", "☺", KeyType.SPECIAL, weight = 1.0f)
-        val LANGUAGE = KeyDefinition("language", "🌐", KeyType.SPECIAL, weight = 1.0f)
+        val EMOJI = KeyDefinition("emoji", "\u263A", KeyType.SPECIAL, weight = 1.0f)
+        val LANGUAGE = KeyDefinition("language", "\uD83C\uDF10", KeyType.SPECIAL, weight = 1.0f)
         val COMMA_KEY = KeyDefinition("comma_key", ",", KeyType.CHARACTER, ',', weight = 1.0f)
         val PERIOD_KEY = KeyDefinition("period_key", ".", KeyType.CHARACTER, '.', weight = 1.0f)
-        val SETTINGS = KeyDefinition("settings", "⚙", KeyType.SPECIAL, weight = 1.0f)
+        val SETTINGS = KeyDefinition("settings", "\u2699", KeyType.SPECIAL, weight = 1.0f)
     }
 }
 
 enum class KeyType {
-    CHARACTER,      // Regular letter/number character
-    MODIFIER,       // Shift, Ctrl, Alt, Fn
-    ACTION,         // Enter, Backspace, Space, Tab, Esc
-    NAVIGATION,     // Arrow keys, Home, End
-    FUNCTION,       // F1-F24
-    SPECIAL,        // Symbols toggle, Emoji, Language
-    MACRO,          // Programmable macro key
-    LAYER_SWITCH    // Switch keyboard layer
+    CHARACTER,
+    MODIFIER,
+    ACTION,
+    NAVIGATION,
+    FUNCTION,
+    SPECIAL,
+    MACRO,
+    LAYER_SWITCH
 }
 
 enum class KeyAction {
