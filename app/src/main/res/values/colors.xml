@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mkpro_background">#FF1A1A1E</color>
+    <color name="mkpro_surface">#FF252529</color>
+    <color name="mkpro_surface_elevated">#FF2D2D32</color>
+    <color name="mkpro_key_background">#FF3D3D42</color>
+    <color name="mkpro_key_background_pressed">#FF4A4A50</color>
+    <color name="mkpro_key_text">#FFE0E0E5</color>
+    <color name="mkpro_key_text_pressed">#FFFFFFFF</color>
+    <color name="mkpro_key_accent">#FF6C63FF</color>
+    <color name="mkpro_modifier_background">#FF2A2A30</color>
+    <color name="mkpro_modifier_pressed">#FF3A3A42</color>
+    <color name="mkpro_enter_background">#FF6C63FF</color>
+    <color name="mkpro_enter_pressed">#FF7B73FF</color>
+    <color name="mkpro_shadow">#CC000000</color>
+    <color name="mkpro_key_glow">#336C63FF</color>
+    <color name="mkpro_ripple">#1AFFFFFF</color>
+    <color name="mkpro_primary">#FF6C63FF</color>
+    <color name="mkpro_on_primary">#FFFFFFFF</color>
+    <color name="mkpro_secondary">#FF03DAC6</color>
+</resources>

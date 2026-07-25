@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MKPro" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/mkpro_primary</item>
+        <item name="colorOnPrimary">@color/mkpro_on_primary</item>
+        <item name="colorSecondary">@color/mkpro_secondary</item>
+        <item name="android:colorBackground">@color/mkpro_background</item>
+        <item name="android:statusBarColor">@color/mkpro_background</item>
+        <item name="android:navigationBarColor">@color/mkpro_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

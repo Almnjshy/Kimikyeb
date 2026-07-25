@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mechanical Keyboard Pro</string>
+    <string name="ime_label">MKPro Keyboard</string>
+    <string name="subtype_en_us">English (US)</string>
+    <string name="subtype_ar">العربية</string>
+
+    <!-- Settings -->
+    <string name="settings_title">MKPro Settings</string>
+    <string name="settings_enable_keyboard">Enable Keyboard</string>
+    <string name="settings_select_keyboard">Select MKPro as your keyboard</string>
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_sound">Sound</string>
+    <string name="settings_vibration">Vibration</string>
+    <string name="settings_keyboard_height">Keyboard Height</string>
+    <string name="settings_about">About</string>
+    <string name="settings_version">Version 1.0.0 Phase 1</string>
+
+    <!-- Key Labels -->
+    <string name="key_shift">⇧</string>
+    <string name="key_backspace">⌫</string>
+    <string name="key_enter">↵</string>
+    <string name="key_space">Space</string>
+    <string name="key_symbols">?123</string>
+    <string name="key_letters">ABC</string>
+    <string name="key_emoji">☺</string>
+    <string name="key_language">🌐</string>
+</resources>

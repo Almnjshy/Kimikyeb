@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Key Dimensions -->
+    <dimen name="key_corner_radius">8dp</dimen>
+    <dimen name="key_elevation">4dp</dimen>
+    <dimen name="key_elevation_pressed">1dp</dimen>
+    <dimen name="key_spacing">3dp</dimen>
+    <dimen name="key_text_size">18sp</dimen>
+    <dimen name="key_icon_size">22dp</dimen>
+
+    <!-- Keyboard -->
+    <dimen name="keyboard_padding">4dp</dimen>
+    <dimen name="keyboard_row_spacing">6dp</dimen>
+
+    <!-- Command Bar -->
+    <dimen name="command_bar_height">44dp</dimen>
+    <dimen name="command_bar_icon_size">20dp</dimen>
+</resources>
