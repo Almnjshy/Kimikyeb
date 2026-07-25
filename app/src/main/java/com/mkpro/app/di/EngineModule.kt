@@ -1,16 +1,14 @@
 package com.mkpro.app.di
 
+import android.content.Context
 import com.mkpro.engine.*
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ServiceComponent
+import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.android.scopes.ServiceScoped
 
-/**
- * Engine-level dependency injection module.
- * Provides all keyboard engines scoped to the IME Service.
- */
 @Module
 @InstallIn(ServiceComponent::class)
 object EngineModule {
@@ -39,19 +37,19 @@ object EngineModule {
 
     @Provides
     @ServiceScoped
-    fun provideSoundEngine(): SoundEngine {
-        return SoundEngine()
+    fun provideSoundEngine(@ApplicationContext context: Context): SoundEngine {
+        return SoundEngine(context)
     }
 
     @Provides
     @ServiceScoped
-    fun provideHapticEngine(): HapticEngine {
-        return HapticEngine()
+    fun provideHapticEngine(@ApplicationContext context: Context): HapticEngine {
+        return HapticEngine(context)
     }
 
     @Provides
     @ServiceScoped
-    fun provideClipboardManager(): ClipboardManager {
-        return ClipboardManager()
+    fun provideClipboardManager(@ApplicationContext context: Context): ClipboardManager {
+        return ClipboardManager(context)
     }
 }
