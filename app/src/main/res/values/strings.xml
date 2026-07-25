@@ -3,7 +3,7 @@
     <string name="app_name">Mechanical Keyboard Pro</string>
     <string name="ime_label">MKPro Keyboard</string>
     <string name="subtype_en_us">English (US)</string>
-    <string name="subtype_ar">العربية</string>
+    <string name="subtype_ar">\u0627\u0644\u0639\u0631\u0628\u064a\u0629</string>
     <string name="settings_title">MKPro Settings</string>
     <string name="settings_enable_keyboard">Enable Keyboard</string>
     <string name="settings_select_keyboard">Select MKPro as your keyboard</string>
@@ -13,12 +13,12 @@
     <string name="settings_keyboard_height">Keyboard Height</string>
     <string name="settings_about">About</string>
     <string name="settings_version">Version 1.0.0 Phase 1</string>
-    <string name="key_shift">⇧</string>
-    <string name="key_backspace">⌫</string>
-    <string name="key_enter">↵</string>
+    <string name="key_shift">\u21E7</string>
+    <string name="key_backspace">\u232B</string>
+    <string name="key_enter">\u21B5</string>
     <string name="key_space">Space</string>
-    <string name="key_symbols">?123</string>
+    <string name="key_symbols">123#</string>  <!-- ← تغيّر من ?123 -->
     <string name="key_letters">ABC</string>
-    <string name="key_emoji">☺</string>
-    <string name="key_language">🌐</string>
+    <string name="key_emoji">\u263A</string>
+    <string name="key_language">\uD83C\uDF10</string>
 </resources>
