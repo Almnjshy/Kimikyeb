@@ -263,7 +263,3 @@ sealed class KeyState {
     data class Pressed(val key: KeyDefinition) : KeyState()
     data class Released(val key: KeyDefinition) : KeyState()
 }
-
-enum class ModifierKey {
-    SHIFT, CTRL, ALT, FN
-}
