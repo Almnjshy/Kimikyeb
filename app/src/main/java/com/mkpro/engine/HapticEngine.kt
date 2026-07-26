@@ -5,6 +5,7 @@ import android.os.Build
 import android.os.VibrationEffect
 import android.os.Vibrator
 import android.view.HapticFeedbackConstants
+import androidx.annotation.RequiresApi
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -26,10 +27,13 @@ class HapticEngine @Inject constructor(
     fun performFeedback() {
         if (!isEnabled || !vibrator.hasVibrator()) return
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             val effect = VibrationEffect.createPredefined(
                 VibrationEffect.EFFECT_CLICK
             )
+            vibrator.vibrate(effect)
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val effect = VibrationEffect.createOneShot(10, VibrationEffect.DEFAULT_AMPLITUDE)
             vibrator.vibrate(effect)
         } else {
             @Suppress("DEPRECATION")
@@ -40,10 +44,13 @@ class HapticEngine @Inject constructor(
     fun performStrongFeedback() {
         if (!isEnabled || !vibrator.hasVibrator()) return
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             val effect = VibrationEffect.createPredefined(
                 VibrationEffect.EFFECT_HEAVY_CLICK
             )
+            vibrator.vibrate(effect)
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val effect = VibrationEffect.createOneShot(20, VibrationEffect.DEFAULT_AMPLITUDE)
             vibrator.vibrate(effect)
         } else {
             @Suppress("DEPRECATION")
