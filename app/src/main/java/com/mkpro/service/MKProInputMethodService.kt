@@ -112,11 +112,4 @@ class MKProInputMethodService : InputMethodService() {
         soundEngine.release()
         inputContainer = null
     }
-
-    // ═══════════════════════════════════════════════════════
-    // Public API for UI Components
-    // ═══════════════════════════════════════════════════════
-    fun getKeyboardEngine(): KeyboardEngine = keyboardEngine
-    fun getLayoutEngine(): LayoutEngine = layoutEngine
-    fun getThemeEngine(): ThemeEngine = themeEngine
 }
