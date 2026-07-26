@@ -1,0 +1,10 @@
+package com.mkpro.domain.model
+
+enum class KeyType {
+    CHARACTER,
+    MODIFIER,
+    ACTION,
+    NAVIGATION,
+    FUNCTION,
+    SPECIAL
+}
